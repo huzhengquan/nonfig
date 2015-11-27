@@ -1,0 +1,25 @@
+{
+  "name": "nonfig",
+  "version": "0.0.1",
+  "description": "config module for node projects.",
+  "author": "huzhengquan@gmail.com",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzhengquan/nonfig.git"
+  },
+  "keywords": [
+    "config"
+  ],
+  "engines": {
+    "node": "^4.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/huzhengquan/nonfig/issues"
+  },
+  "homepage": "https://github.com/huzhengquan/nonfig#readme"
+}
