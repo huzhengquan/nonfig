@@ -1,6 +1,6 @@
 {
   "name": "nonfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "config module for node projects.",
   "author": "huzhengquan@gmail.com",
   "main": "index.js",
@@ -16,10 +16,13 @@
     "config"
   ],
   "engines": {
-    "node": "^4.2.1"
+    "node": "^5.1.0"
   },
   "bugs": {
     "url": "https://github.com/huzhengquan/nonfig/issues"
+  },
+  "directories": {
+    "doc":"."
   },
   "homepage": "https://github.com/huzhengquan/nonfig#readme"
 }
