@@ -25,9 +25,16 @@ npm install nofig
 
 /shop/dev.config.json
 
-   {"b":2}
+    {"b":2}
 
-/shop/index.js：
+/shop/index.js
 
     var config = require('nonfig')();
     // config : {"a":1,"b":2}
+
+# License
+
+  MIT
+
+[npm-image]: https://img.shields.io/npm/v/nonfig.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/nonfig
