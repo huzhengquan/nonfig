@@ -6,13 +6,17 @@ module.exports = function(){
   //dev
   const configFile = (process.env.NODE_ENV || "dev")+'.config.json';
   const readConfig = function(config,dir){
-    try{
-      let newConfig = require(path.join(dir,configFile));
-      return readConfig(Object.assign(newConfig, config),path.join(dir,'../'));
-    }catch(e){
+		const filepath = path.join(dir,configFile);
+		if (! path.existsSync(filepath)) { 
+			return config;
+		}
+		try{
+			let newConfig = require(path.join(dir,configFile));
+			return readConfig(Object.assign(newConfig, config),path.join(dir,'../'));
+		}catch(e){
 			console.log("error: ",e);
-      return config;
-    }
+			return config;
+		}
   }
   return readConfig({},path.resolve('./'));
 }
