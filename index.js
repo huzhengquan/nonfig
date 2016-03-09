@@ -1,5 +1,6 @@
 "use strict";
-var path=require('path');
+var path=require('path'),
+	fs = require('fs');
 
 module.exports = function(){
   //production
@@ -7,7 +8,7 @@ module.exports = function(){
   const configFile = (process.env.NODE_ENV || "dev")+'.config.json';
   const readConfig = function(config,dir){
 		const filepath = path.join(dir,configFile);
-		if (! path.existsSync(filepath)) { 
+		if (! fs.existsSync(filepath)) { 
 			return config;
 		}
 		try{
