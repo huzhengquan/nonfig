@@ -6,8 +6,12 @@
 ## 安装
 
 ```
-npm install nofig
+npm install nonfig
 ```
+
+## 配置
+
+process.env.NODE_ENV = production/dev
 
 ##  例
 
