@@ -33,7 +33,7 @@ process.env.NODE_ENV = production/dev
 
 /shop/index.js
 
-    var config = require('nonfig')();
+    var config = require('nonfig')(__dirname);
     // config : {"a":1,"b":2}
 
 # License

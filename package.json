@@ -1,6 +1,6 @@
 {
   "name": "nonfig",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "config module for node projects.",
   "author": "huzhengquan@gmail.com",
   "main": "index.js",
